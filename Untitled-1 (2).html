@@ -1,0 +1,48 @@
+<body style="background-color:black">
+    <center><p style="color:red">donate here: 0x60eB206304C6E921b32cb2dBd8A6F208E106EB9f</p><center>
+</div>
+<form name="formcalc">
+<p style="color:green">Crypto buy in price(per coin):</p> <input type="text" name="txtnum1">
+<br>
+<p style="color:green">return percentage:</p><input type="text" name="txtnum2">
+<br>
+<p style="color:green">gains (per coin):</p><input type="text" name="txtres">
+<br>
+<input type="button" value="Calculate" onClick="sumValues()">
+
+</form>
+<p style="color:green"></p>
+<script type="text/javascript">
+ function sumValues()
+ {
+     
+var num1, num2, res;
+num1=Number(document.formcalc.txtnum1.value);
+num2=Number(document.formcalc.txtnum2.value);
+res=num1*num2; 
+document.formcalc.txtres.value=res;
+ 
+ }
+
+
+
+  </script>
+     </div>
+   
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+  {
+  "width": "1000",
+  "height": "300",
+  "defaultColumn": "overview",
+  "screener_type": "crypto_mkt",
+  "displayCurrency": "USD",
+  "colorTheme": "dark",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
